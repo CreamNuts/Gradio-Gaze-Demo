@@ -30,4 +30,4 @@ video_demo = gr.Interface(
     description="Get video and estimate gaze",
 )
 demo = gr.TabbedInterface([img_demo, video_demo], ["Webcam", "Video"])
-demo.launch()  # share=True, auth=[("kvl", "kvldemotest")])
+demo.launch(share=True)  # , auth=[("id", "password")])
